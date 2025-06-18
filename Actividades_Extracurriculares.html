@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Letra</title>
+    <link  href="Extra_Curriculares.CSS" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <style> 
+        .texto-degradado { background: -webkit-linear-gradient(#013d24, #024217); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 40px; font-weight: bold; } 
+    </style> 
+</head> 
+
+<body> 
+     <center>
+    <h1 <div data-aos="flip-left"></div>Extracurricualares</h1>
+</center>
+
+<center>
+ <canvas id="canvasLista" width="400" height="300"></canvas>
+
+<script>
+var canvas = document.getElementById("canvasLista");
+var ctx = canvas.getContext("2d");
+
+ctx.fillStyle = "#ffffff"; 
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+
+ctx.font = "24px Arial";
+ctx.fillStyle = "#333333"; 
+ctx.fillText("Extracurriculares:", 5, 20); 
+
+
+var productos = [
+    "1. FUTBOL",
+    "2. BANDEROLAS",
+    "3. VOLEIBOL",
+    "4. BASQUETBOL",
+    "5. CANTO",
+    "6. EXCLAMACION",
+
+];
+
+
+ctx.font = "18px Arial";
+for (var i = 0; i < productos.length; i++) {
+    ctx.fillText(productos[i], 50, 70 + (i * 30));
+}
+</script>
+</center>
+    
+    <h2>BANDEROLAS</h2>
+<div id="cuadro" <div data-aos="flip-left"></div>
+    <img src="banderolas.jpg" alt="Zapatos">
+</div>
+
+<h2>BASQUETBOL</h2>
+<div id="cuadro" <div data-aos="flip-left"></div>
+    <img src="basquetbol.jpg" alt="Zapatos">
+</div>
+
+<h2>Futbol</h2>
+<div id="cuadro" <div data-aos="flip-left"></div>
+    <img src="futbol.jpg" alt="Zapatos">
+</div>
+
+<h2>VOLEIBOL</h2>
+<div id="cuadro" <div data-aos="flip-left"></div>
+    <img src="voleibol.jpeg" alt="Zapatos">
+</div>
+
+<h1>¿Que son las extracurriculares?</h1>
+
+    <div class="info" div data-aos="zoom-in-up"></div></div>
+        <h2>Información sobre los deportes</h2>
+        <p><strong>Extracurricualares:</strong>Son actividades educativas, deportivas, artísticas o sociales que se realizan fuera del horario escolar regular y complementan la formación académica de los estudiantes. Estas actividades no son obligatorias ni forman parte del plan de estudios oficial, pero contribuyen al desarrollo integral de los alumnos. </p>
+       <p><strong>En el CECyTE, las actividades extracurriculares pueden incluir:</strong>Deportes: Fútbol, voleibol, baloncesto, atletismo, etc.
+Arte y cultura: Música, danza, teatro, pintura, declamación, etc.
+Creatividad e innovación: Participación en proyectos, prototipos, investigaciones o desarrollos tecnológicos.
+Clubes y talleres: Diversos clubes y talleres enfocados en diferentes áreas de interés. </p>
+    </div>  
+
+
+    <a href="index.html">Regresar
+    </a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+  AOS.init();
+</script>
+
+</body>
+
+</html>
+

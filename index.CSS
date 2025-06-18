@@ -1,0 +1,38 @@
+body{
+    background: linear-gradient(90deg,rgba(4, 130, 56, 1) 46%, rgba(160, 237, 83, 1) 100%);
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0%;
+    background-attachment: fixed;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #044b19, #01913d);
+    padding: 10px 20px;
+}
+.navbar ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+.navbar li {
+    margin-right: 20px; 
+}
+
+.navbar a {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    transition: background-color 0.3s ease; 
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 5px; 
+}
